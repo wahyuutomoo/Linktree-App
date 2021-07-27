@@ -1,0 +1,2 @@
+rootProject.name = "Linktree-App"
+include ':app'
