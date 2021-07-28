@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:layout_goneMarginTop="15dp"
+    android:layout_marginBottom="15dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_list"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/wa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhatApp"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/iv_list"
+            app:layout_constraintTop_toTopOf="@id/iv_list"
+            app:layout_constraintBottom_toBottomOf="@id/iv_list"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
